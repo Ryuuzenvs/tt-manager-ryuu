@@ -1,0 +1,18 @@
+# Buat venv
+python3 -m venv venv
+
+# Aktifkan venv
+source ../venv/bin/activate
+
+# Upgrade pip
+pip install --upgrade pip
+
+# Install library utama
+pip install playwright yt-dlp
+
+# Install browser binary (PENTING: Tanpa ini Playwright tidak bisa jalan)
+playwright install chromium
+playwright install-deps chromium
+
+# Pastikan venv aktif (ada tanda (venv) di terminal)
+python3 scripts/scraper.py
