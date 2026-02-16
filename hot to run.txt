@@ -16,3 +16,5 @@ playwright install-deps chromium
 
 # Pastikan venv aktif (ada tanda (venv) di terminal)
 python3 scripts/scraper.py
+
+/var/www/html/run.sh /var/www/html/tiktok-manager/scripts/scraper.py

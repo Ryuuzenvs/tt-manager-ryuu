@@ -5,8 +5,9 @@ from playwright.sync_api import sync_playwright
 #COLLECTION_URL = "https://www.tiktok.com/@ryuuzen_vv/collection/waifu-7599147794905058068"
 COLLECTION_URL = "https://www.tiktok.com/@ryuuzen_vv/collection/waifu-7360103874431306501"
 
-DB_PATH = "scripts/database.db"
-DOWNLOAD_DIR = "downloads"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_PATH = os.path.join(BASE_DIR, 'database.db')
+DOWNLOAD_DIR = os.path.join(BASE_DIR, '../downloads')
 
 os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
@@ -41,7 +42,7 @@ def download_with_ytdlp(url, video_id):
 
 def run_scraper():
     with sync_playwright() as p:     #headless=True
-        browser = p.chromium.launch(headless=False, args=['--disable-blink-features=AutomationControlled', '--no-sandbox'])
+        browser = p.chromium.launch(headless=True, args=['--disable-blink-features=AutomationControlled', '--no-sandbox'])
         context = browser.new_context(user_agent="Mozilla/5.0 ...")
         page = context.new_page()
         page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")

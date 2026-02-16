@@ -5,4 +5,4 @@
 .tiktok.com	TRUE	/	TRUE	0	tt_csrf_token	IQN45kIS-Jui-2jtxGhqq0_bcTU9GxKg2nbc
 .tiktok.com	TRUE	/	TRUE	1786369045	tt_chain_token	SRVHuFvSumzGjE39pFYcnw==
 .tiktok.com	TRUE	/	TRUE	1771681045	msToken	ltrykP9-8I0OOogybhm34MW0cigskjdqUq4jzaG-vVPwPKJAyDjnd8CY26VOYQ0KyIvD50T6bjcXZg_WerxF54YCIxfoKtIUeVItiAEQaAe6TV8SG4x_f9KX
-api22-normal-c-useast2a.tiktokv.com	FALSE	/	FALSE	0	odin_tt	1233957d702742cf007f8b6fca1af3fdcdbe04a16cbf7b6345f4119cbe8b62acde0dac9ea63e1dc7422dd94e98f3ea56e46a2fa5fca628ba382ec58d3d6e0dfad8364944175334ffcdb1b1df271c1bf8
+api22-normal-c-useast2a.tiktokv.com	FALSE	/	FALSE	0	odin_tt	8f90d3e7962835e79fa56307c7ba3fe2b1be54d1eb19c02b652f20b359c48d8e09bed3feb446476010b83581d94028122e00393ef44724608bf5f4a6ac808e0c49646bbbdcb615e029668310dc5e6fea
